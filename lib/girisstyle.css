@@ -1,0 +1,63 @@
+body{
+
+    background-color: bisque;
+
+}
+
+div{
+    border: 4px double pink;
+    padding: 50px;
+    text-align: center;
+    width: 50%;
+    font-size: 35px;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 2px;
+    border-radius: 25px
+}
+
+h1{
+    border: 4px double pink;
+    margin-left:  45%;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 2px;
+    margin-top: 2%;
+    border-radius: 25px
+}
+
+*{
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.input{
+
+    border-radius: 25px;
+    font-size: 25px;
+}
+
+.buton{
+    border-radius: 25px;
+    background-color: rgb(211, 211, 252);
+    font-size: 20px;
+}
+
+.buton:hover{
+    background-color: black;
+    color: rgb(211 , 211, 252);
+}
+
+input[type="password"]:focus {
+        
+    background-color: lightblue;
+  }
+
+  input[type="text"]:focus {
+        
+    background-color: lightblue;
+  }
+
+

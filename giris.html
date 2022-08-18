@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Kayıt Ol</title>
+    <link rel="stylesheet" href="lib/style.css"/>
+</head>
+<body>
+    <h1 class="giris">Kullanıcı Giriş/Kayıt Alanı</h1>
+    <div class="giris">
+
+
+        <label>İsminiz</label>
+        <br>
+        <input type="text" id="name" class="input" required/>
+        <br>
+        <br>
+        <label>Şifreniz</label>
+        <br>
+        <input type="password" id="password" class="input" required/>
+        <br><br>
+        <button class = "buton" type="submit" id="giris" onclick="girisYap() ">Giriş Yap</button>
+        <button class= "buton" type="submit" id="kayit" onclick="kayitOl()">Kayıt Ol</button>
+        
+    </div>
+    
+    <script>
+
+        function kayitOl() 
+            {
+                var isim = document.getElementById('name').value;
+                var sifre = document.getElementById('password').value;
+
+                localStorage.setItem('isim',isim);
+                localStorage.setItem('sifre',sifre);
+                console.log("kayıt");
+                document.getElementById('title').innerHTML = "Giris Sayfası"
+                alert('Kayıt Olundu')
+                window.location.reload();
+                localStorage.setItem('login' , 0)
+            }
+
+        function girisYap()
+            {
+                var dataName = localStorage.getItem('isim');
+                var dataSifre = localStorage.getItem('sifre');
+                
+
+                if((dataName == document.getElementById('name').value))
+                {
+                   alert('Giris Başarılı!');
+                    var dataLogin = localStorage.setItem('login' , 1)
+                    window.location.assign('index.html');
+                }
+                else
+                {
+                    alert("Giriş Başarısız");
+                    var dataLogin = localStorage.setItem('login' , 0)
+                }
+                
+            }
+        
+    </script>    
+</body>
+</html>

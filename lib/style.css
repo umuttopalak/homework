@@ -1,0 +1,102 @@
+.iller{
+    padding: 4px 4% 4px 4%;
+    font-size: 30px;
+    margin-left: 2%;
+    margin-right: 4%;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #C19185;
+    border: 2px solid #8D7688
+    
+}
+
+
+.ilBilgisi{
+    font-style: italic;
+}
+
+img{
+    width: 50%;
+    height: 50%;
+}
+
+body{
+
+    margin: 1%;
+    text-align: center;
+    background-color: #725368;
+}
+
+
+div.giris{
+    border: 4px solid #8D7688;
+    padding: 50px;
+    text-align: center;
+    width: 50%;
+    font-size: 35px;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 2px;
+    border-radius: 25px;
+    background-color: #C19185;
+}
+
+h1.giris{
+    border: 4px solid #8D7688;
+    margin-left:  45%;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 2px;
+    margin-top: 2%;
+    border-radius: 25px;
+    background-color: #C19185;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.input{
+    width: 75%;
+    border-radius: 25px;
+    font-size: 25px;
+}
+
+.buton{
+    border-radius: 25px;
+    background-color: rgb(211, 211, 252);
+    font-size: 20px;
+}
+
+.buton:hover{
+    background-color: black;
+    color: rgb(211 , 211, 252);
+}
+
+input[type="password"]:focus, input[type="text"]:focus {
+        
+    background-color: #D9B4A3;
+  }
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+div#paragraf.anasayfa{
+    margin-top: 150px;
+    font-size: 50px;
+}
+
+.tablo{
+    border: 3px solid #000000 ;
+    background-color: #D9B4A3;
+    border-collapse: collapse;
+    width: 35%;
+    margin: 2% 33% 2% 33%;
+}
+
